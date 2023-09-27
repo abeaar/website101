@@ -1,0 +1,683 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>{cool} lege</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="325291ab-193f-4835-a882-e58f551518e2" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📖</span></div><h1 class="page-title">{cool} lege</h1></header><div class="page-body"><h2 id="5e7323b0-b71b-4860-be7c-3a48efc4f5bd" class="">Bookmarks</h2><hr id="e3606ae0-4f6f-484d-ad15-fa048218df81"/><figure id="9fc6ab01-8286-43b6-8614-1c3e7132a172" class="link-to-page"><a href="https://www.notion.so/9fc6ab01828643b686141c3e7132a172"><span class="icon">🗓</span>Assignment</a></figure><h2 id="3219fc63-a111-401f-8c57-a5c3bfdbeb38" class="">SEMESTER #</h2><hr id="2d8e872b-4b51-4597-bf80-d99820108b39"/><hr id="2a07565c-46ed-4bac-a59b-65bdaa0aef62"/><figure id="4ffd487c-668e-47bb-9fb7-ef080a75f921" class="block-color-teal_background link-to-page"><a href="https://www.notion.so/CALCULUS-1-4ffd487c668e47bb9fb7ef080a75f921"><span class="icon">😇</span>CALCULUS (1)</a></figure><div id="944ca3b7-d561-4092-97d2-40b0296b51e2" class="column-list"><div id="ccf23782-bfe0-46b8-9719-fd9e563b2f06" style="width:43.75%" class="column"><figure id="997c6e2c-7f08-4efc-b0e9-6ce7506b2536" class="block-color-yellow_background link-to-page"><a href="https://www.notion.so/Algorithm-and-programming-997c6e2c7f084efcb0e96ce7506b2536"><span class="icon">🥰</span>Algorithm and programming</a></figure><figure id="2e38dc05-d59f-482a-8156-d2917189888a" class="block-color-brown_background link-to-page"><a href="https://www.notion.so/Database-system-2e38dc05d59f482a8156d2917189888a"><span class="icon">😁</span>Database system</a></figure><figure id="13fabdf3-f067-4f58-a96a-459e7103e9cb" class="block-color-red_background link-to-page"><a href="https://www.notion.so/Concept-bout-tech-13fabdf3f0674f58a96a459e7103e9cb"><span class="icon">🔃</span>Concept bout tech</a></figure><figure id="53e5296a-4851-42ca-8006-f6e6b465b6e9" class="block-color-brown_background link-to-page"><a href="https://www.notion.so/Dircrete-Math-53e5296a485142ca8006f6e6b465b6e9"><span class="icon">💭</span>Dircrete Math</a></figure></div><div id="f64161b7-4c59-4252-9890-3ca33e6c40eb" style="width:43.75000000000008%" class="column"><figure id="10767765-0bc2-440a-afdd-84c5015e6b16" class="block-color-purple_background link-to-page"><a href="https://www.notion.so/Logic-Comp-107677650bc2440aafdd84c5015e6b16"><span class="icon">📈</span>Logic Comp</a></figure><figure id="7d206221-fe43-4b2a-a5cb-42889f16e88a" class="block-color-blue_background link-to-page"><a href="https://www.notion.so/Kelas-Olahraga-7d206221fe434b2aa5cb42889f16e88a"><span class="icon">🎾</span> Kelas Olahraga</a></figure><figure id="eb30a86f-e342-44d6-9aea-07b30db9ba77" class="block-color-pink_background link-to-page"><a href="https://www.notion.so/Pancasila-eb30a86fe34244d69aea07b30db9ba77"><span class="icon">🦅</span> Pancasila </a></figure><p id="f79992a0-aa2e-42ef-ae71-a5475c46ec87" class="">
+</p></div></div><p id="c4805c54-5a96-4169-8acc-446d1b2b9d43" class=""><strong>D CLASS SCHEDULE</strong></p><hr id="57f2062c-c7ea-49aa-9231-4774b5b07fc0"/><div id="7214f8d8-6a2d-42a2-a3da-17823a371bae" class="column-list"><div id="4d749e76-070c-44c6-ad6a-ac13e8c93d9e" style="width:10%" class="column"><h3 id="dbb64f63-ba26-4fa2-af6e-d0c05c38b602" class="">Monday</h3></div><div id="d7827a85-ddbb-4cbf-b3e7-6b62d1c4304d" style="width:10%" class="column"><h3 id="ab931ca5-a6aa-4c26-984c-a84dacb064b7" class="">Tuesday</h3></div><div id="df1a3f07-2526-4ef2-9599-a141ef946896" style="width:12.5%" class="column"><h3 id="7e4fce71-96b0-43af-bbf3-b658880d17aa" class=""> Wednesday   </h3></div><div id="b339622c-4783-49f6-948d-754ce13cc3bb" style="width:10%" class="column"><h3 id="7d7d6655-c823-4730-9b41-61f6cdc0e57e" class="">Thursday</h3></div><div id="18e54846-65bd-4da5-87b2-04c8f238a2bf" style="width:57.49999999999994%" class="column"><h3 id="d1a96c51-4752-4c7b-a1a6-f7cb22e68097" class="">Friday</h3></div></div><div id="1b79809f-46ff-4452-a7d4-d9b56ffe76a7" class="column-list"><div id="548e3f74-d63e-4920-9b62-4be8ccf9a800" style="width:10.416666666666666%" class="column"><p id="ea87f32b-e743-4585-9a91-63a474e6a736" class="block-color-teal_background"><strong>COURSE 2</strong></p><p id="bd89eae2-442d-4dde-846a-f7479a82403a" class="">olahraga </p><p id="b850e806-a9b7-48f4-969c-94f587e577df" class="">08.00-09.00</p><p id="7e4ff952-d5b1-424f-9a92-bc2a3450dc2c" class="block-color-teal_background"><strong>COURSE 2</strong></p><p id="ee7113ef-127b-4d43-b889-c4a7fa971529" class="">Jar.komputasi</p><p id="90069c53-2867-42dd-ba24-a92f23697f7b" class="">15.30<strong>-17.30</strong></p><p id="66040cf1-766f-49bd-90c2-c8fae3138229" class="">
+</p></div><div id="a420580e-2151-4e63-9b31-fce708eab6e9" style="width:10.416666666666666%" class="column"><p id="e21ced7e-916f-47f1-820a-fe484bdc1767" class="block-color-yellow_background"><strong>COURSE 1</strong></p><p id="bfab1d8c-6494-45ec-8baf-b437d21e30f4" class="">kalku. season 2</p><p id="a494bf72-53e4-48c3-8876-ba6e2696d0aa" class="">12.00-14.00</p><p id="cd4e878c-f744-48ce-bafa-68d6a1e59fad" class="">
+</p></div><div id="0b5a20c3-6445-4423-85c3-951624b02f6c" style="width:12.5%" class="column"><p id="0df727ad-14ce-413c-89e7-b7f66d7e0f18" class="block-color-brown_background"><strong>COURSE 1</strong></p><p id="9c3559de-198d-4aa5-b4b0-784f91aff03e" class="">al.pro lanjut </p><p id="19ce440a-2239-4788-9280-8bdb3d590291" class="">07.00-09.00</p><p id="413fd26f-c094-42b5-b290-138fd9a4187b" class="block-color-brown_background"><strong>COURSE 2</strong></p><p id="31bfa446-6e94-416c-80e2-273bd9759ac2" class="">sis. tek. informasi</p><p id="3e7bf8e8-d3d2-447f-a737-2edc9ec18cd4" class="">09.30-11.30</p><p id="ad155ca9-b307-43b6-8b1e-060269ede6ce" class="">
+</p></div><div id="17388e2e-4567-418e-95ce-a529ef6794b7" style="width:10.416666666666666%" class="column"><p id="66dc9c31-cdff-410a-87e8-e7967b5d7855" class="block-color-teal_background"><strong>COURSE 1 </strong></p><p id="f5a612ef-5ff7-4720-9b3b-75215a6f037f" class=""><strong>matrix vektor</strong></p><p id="ecf93653-9680-4bb9-b9b0-91ea32efe724" class="">14.30-16.30</p><p id="eccd20d1-1d6b-4f5a-ad8d-eaadec4b98dd" class="">
+</p><p id="e2878724-7bf6-42e3-8239-e3844f83ae6f" class="">
+</p><p id="5a728260-c2cd-4a58-97a9-52be3268abec" class="">
+</p></div><div id="025553d4-78af-4138-9649-d1e9991a34c8" style="width:10.416666666666666%" class="column"><p id="b7ee40ef-f16d-4f51-805e-108e6cc8d534" class="block-color-red_background"><strong>COURSE 1</strong></p><p id="a6f06326-8232-4231-b5d6-073f65435249" class="">statistika</p><p id="38e76e91-3977-4511-820d-b82d03f1f949" class=""><strong>07:00-09.30</strong></p><p id="74179ff3-1cd5-4f2b-ade9-22a07c4b52ee" class="block-color-orange_background"><strong>COURSE 2</strong></p><p id="1890c464-d041-4dc3-a323-98a071dc65f7" class="">bas. ing</p><p id="452a49ad-e01d-4ca1-b729-8dc82e4c6f61" class="">13.00-15.00</p><p id="b253e3f5-8961-4b9e-8625-0c0074a47f20" class="">
+</p></div><div id="66bb995d-6278-4cee-922c-9545c6e8025d" style="width:45.833333333333336%" class="column"><p id="ae1ca702-e96c-4cd8-b33d-70a6f70a7013" class=""> </p><p id="c888e7b7-3bd2-4288-b8f7-f459b56100ee" class="">me time</p><p id="6c74084e-cd5e-4584-bb74-50812c3a1a53" class="">
+</p></div></div><p id="46c50c84-b56d-492f-bb8e-63434b9bcfa6" class="">
+</p><p id="409b7164-7b97-4c0c-b3f1-f18e87394dda" class="">
+</p><p id="d8eb28db-5b68-4d67-a25d-f805cbd06ea6" class="">
+</p><hr id="2335989c-fe52-432a-891d-ff2f0cde054a"/><p id="d729b381-7c37-4e6d-86a5-f4024cc33f12" class="">
+</p><p id="b3776194-7806-45d9-84bd-e01573b4d95f" class="">
+</p></div></article></body></html>

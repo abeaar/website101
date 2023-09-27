@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+  color: #68571c;
+}
+
+body {
+  background-color: #12202e;
+}
+
+.layout {
+  background-color: #beb07b;
+  border-radius: 10px;
+  /* width: 100%-3rem; */
+}
+
+.judul {
+  font-size: 52px;
+}
+
+.nim {
+  font-size: 36px;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #beb07b;
+}

@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: cadetblue;
+  position: fixed;
+  width: 90%;
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,.2);
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color: #096d7d;
+  transition: all .20s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  padding: 4px 14px;
+  border-radius: 5px;
+}
+
+.title-logo{
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 20px;
+}
+
+.full-logo a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16%;
+}
+
+.home-content h1{
+  font-size: 32px;
+  font-family: 'Poppins Medium', sans-serif;
+  color: cadetblue;
+  text-align: center;
+  padding: 0px 0px 5px 0px;
+}
+
+.home-content h6{
+  font-size: 16px;
+  font-family: 'Poppins medium', sans-serif;
+  color: cadetblue;
+  text-align: center;
+  padding: 0px 0px 25px 0px;
+}
+
+.home-content p{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  color: cadetblue;
+  text-align: center;
+  width: 500px;
+}
+
+.about-main{
+  padding: 16%;
+}
+
+.about-content{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img{
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -10px 15px 10px 0 rgba(0,0,0,.2);
+}
+
+.biodata{
+  width: 50%;
+  padding: none;
+}
+
+.biodata h7{
+  font-size: 22px;
+  font-family: 'Poppins Medium', sans-serif;
+  color: cadetblue;
+}
+
+.biodata h6{
+  font-size: 55px;
+  font-family: 'Poppins', sans-serif;
+  color: cadetblue;
+  padding: none;
+}
+
+.biodata p{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  color: cadetblue;
+  width: 80%;
+}
+
+.product-main{
+  padding: 16%;
+}
+
+.product-title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: cadetblue;
+}
+
+.product-all{
+padding-top: 40px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+}
+
+.product-card{
+  border: 3px solid rgb(192, 192, 192);
+  border-radius: 15px;
+  height: 470px;
+  width: 300px;
+  box-shadow: 5px 5px 7px 0 rgba(0,0,0,.2);
+}
+
+.card-text{
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 11px 11px 0px 0px;
+}
+
+.product-card h1{
+  color: cadetblue;
+  font-family: 'poppins medium', sans-serif;
+  font-size: 28px;
+}
+
+.product-card p{
+  padding-right: 4px;
+  color: rgb(153, 153, 153);
+  font-family: 'poppins medium', sans-serif;
+  font-size: 12px;
+}
+
+.product-card button{
+  font-family: 'Poppins';
+  font-size: 22px;
+  color: cadetblue;
+  border: 2px solid cadetblue;
+  border-radius: 7px;
+  height: 42px;
+  width: 90px;
+  margin: 13px 0px;
+  cursor: pointer;
+}
+.product-card button:hover{
+  color: white;
+  font-family: 'poppins medium';
+  background-color: cadetblue;
+  transition: all .20s ease-in-out;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+  color: white;
+  font-family: 'Poppins Medium', sans-serif;
+  padding: 10px;
+}
+
+
+

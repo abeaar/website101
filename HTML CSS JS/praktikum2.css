@@ -1,0 +1,44 @@
+
+
+#welcome {
+    background-color: #ffd9ad;
+    font-style: bold;
+    font-family: "vogue";
+}
+
+#menu{
+    background-color: #ffffff7a; 
+    color: aliceblue;
+}
+#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+body {
+    font-style: normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+}
+
+
+#paragraf1 {
+    background-color: #ffd9ad;
+    color: rgb(0, 0, 0);
+}
+#paragraf2 {
+    color: azure;
+
+}
+
+#table {
+
+    border-color: beige;
+    color: aliceblue;
+}
+
+#container {
+    width: 100%;
+    align-items: center;
+}
