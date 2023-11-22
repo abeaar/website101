@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    // add <?php inlcude 'navbar.php'?> 
+
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="home_admin.php">Navbar</a>
